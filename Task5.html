@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    </style>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <th>Re-enter Password</th>
+                    <td><input type="password" id="re_password" name="re_password" required></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input type="number" id="age" name="age" required></td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td><input type="tel" id="phone_number" name="phone_number" required></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text" id="address" name="address" required></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="text" id="state" name="state" required></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Languages Known</th>
+                    <td>
+                        <input type="checkbox" id="english" name="languages" value="english">
+                        <label for="english">English</label>
+                        <input type="checkbox" id="kannada" name="languages" value="kannada">
+                        <label for="kannada">Kannada</label>
+                        <input type="checkbox" id="hindi" name="languages" value="hindi">
+                        <label for="hindi">Hindi</label>
+                        <input type="checkbox" id="telugu" name="languages" value="telugu">
+                        <label for="telugu">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
